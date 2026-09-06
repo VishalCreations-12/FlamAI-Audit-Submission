@@ -68,62 +68,11 @@ The decision memo converts the technical findings into an engineering recommenda
 
 ---
 
-## Repository Structure
+## Reproducibility
 
-```text
-FlamAI-Audit-Submission/
-│
-├── README.md
-├── NOTEBOOK.md
-├── AI_USAGE.md
-├── DEFENSE_PREP.md
-├── requirements.txt
-├── .gitignore
-│
-├── original_materials/
-│   ├── REPORT_v0.md
-│   ├── fertility.py
-│   ├── bench/
-│   │   ├── bench_log.csv
-│   │   └── model_spec.md
-│   └── corpus_sample/
-│       ├── eng_sample.txt
-│       └── hin_sample.txt
-│
-├── partA/
-│   ├── memo.md
-│   ├── code/
-│   │   ├── audit_fertility.py
-│   │   ├── prepare_corpus.py
-│   │   └── run_tokenizer_analysis.py
-│   ├── corpus/
-│   │   ├── README.md
-│   │   ├── corpus_stats.json
-│   │   ├── processed/
-│   │   ├── raw/
-│   │   └── flores200_dataset.tar.gz
-│   ├── experiments/
-│   │   ├── baseline/
-│   │   ├── bug_audit/
-│   │   ├── corrected_analysis/
-│   │   └── metric_audit/
-│   └── results/
-│       ├── evidence_summary.md
-│       ├── tokenizer_results.csv
-│       └── tokenizer_results.json
-│
-├── partB/
-│   ├── README.md
-│   ├── answers.md
-│   ├── calculations.md
-│   ├── code/
-│   │   └── analyze_capacity.py
-│   └── results/
-│       └── capacity_summary.json
-│
-├── partC/
-│   └── memo.md
-│
-└── tests/
-    ├── test_capacity.py
-    └── test_metrics.py
+All analysis is designed to be reproducible from the repository root.
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
