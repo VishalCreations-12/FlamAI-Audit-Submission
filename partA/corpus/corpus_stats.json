@@ -1,0 +1,47 @@
+{
+  "eng": {
+    "language_code": "eng_Latn",
+    "sentences": 500,
+    "total_words": 10467,
+    "total_chars": 62303,
+    "total_bytes": 62363,
+    "avg_words_per_sent": 20.93,
+    "avg_chars_per_sent": 124.61
+  },
+  "hin": {
+    "language_code": "hin_Deva",
+    "sentences": 500,
+    "total_words": 12084,
+    "total_chars": 61775,
+    "total_bytes": 158437,
+    "avg_words_per_sent": 24.17,
+    "avg_chars_per_sent": 123.55
+  },
+  "kan": {
+    "language_code": "kan_Knda",
+    "sentences": 500,
+    "total_words": 7708,
+    "total_chars": 65096,
+    "total_bytes": 175915,
+    "avg_words_per_sent": 15.42,
+    "avg_chars_per_sent": 130.19
+  },
+  "tam": {
+    "language_code": "tam_Taml",
+    "sentences": 500,
+    "total_words": 7872,
+    "total_chars": 71509,
+    "total_bytes": 194336,
+    "avg_words_per_sent": 15.74,
+    "avg_chars_per_sent": 143.02
+  },
+  "tel": {
+    "language_code": "tel_Telu",
+    "sentences": 500,
+    "total_words": 8060,
+    "total_chars": 62693,
+    "total_bytes": 165771,
+    "avg_words_per_sent": 16.12,
+    "avg_chars_per_sent": 125.39
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kv_cache_calculation": {
+    "num_layers": 28,
+    "num_kv_heads": 8,
+    "head_dim": 128,
+    "bytes_per_elem": 2,
+    "kv_bytes_per_layer": 4096,
+    "total_kv_bytes_per_token": 114688,
+    "total_kv_kib_per_token": 112.0
+  },
+  "capacity_calculation": {
+    "gpu_total_gb": 24.0,
+    "gpu_memory_utilization": 0.92,
+    "usable_gpu_ram_gb": 22.080000000000002,
+    "weights_gb": 8.4,
+    "overhead_gb": 1.6,
+    "available_kv_ram_gb_decimal": 12.08,
+    "kv_bytes_per_sequence": 469762048,
+    "kv_mib_per_sequence": 448.0,
+    "max_concurrent_4096_sequences_decimal": 25
+  },
+  "goodput_batch24_derivation": {
+    "batch_size": 24,
+    "prompt_len": 3584,
+    "gen_len": 512,
+    "wall_clock_s": 61.16,
+    "reported_tok_s": 1607.4,
+    "harness_calculated_tok_s": 1607.33,
+    "total_gen_tokens": 12288,
+    "goodput_way1_gen_tok_s": 200.92,
+    "goodput_way2_peak_decode_tok_s": 249.82,
+    "goodput_way2_net_decode_tok_s": 202.57,
+    "misread_ratio": 8.0
+  }
+}
