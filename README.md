@@ -1,8 +1,8 @@
 # FlamAI AI Team Intern Assignment — The Audit
 
-**Candidate / Author**: Lead AI/ML Research & Systems Audit Engineer  
+**Candidate / Author**: Vishal S
 **Date**: September 6, 2026  
-**Repository**: `FlamAI_Audit_Submission/`  
+**Repository**: `FlamAI_Audit_Submission`  
 
 ---
 
