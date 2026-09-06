@@ -70,9 +70,111 @@ The decision memo converts the technical findings into an engineering recommenda
 
 ## Reproducibility
 
-All analysis is designed to be reproducible from the repository root.
+All analysis commands are intended to be run from the repository root.
 
-### Install dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
+```
+
+### Run Tests
+
+```bash
+pytest -q
+```
+
+### Run Part A Tokenizer Analysis
+
+```bash
+python partA/code/run_tokenizer_analysis.py
+```
+
+### Run Part A Fertility Audit
+
+```bash
+python partA/code/audit_fertility.py
+```
+
+### Run Part B Capacity Analysis
+
+```bash
+python partB/code/analyze_capacity.py --bench_csv original_materials/bench/bench_log.csv --output_dir partB/results
+```
+
+The repository contains the generated evidence and result files used for the reported findings.
+
+---
+
+## Repository Structure
+
+```text
+FlamAI-Audit-Submission/
+│
+├── README.md
+├── NOTEBOOK.md
+├── AI_USAGE.md
+├── DEFENSE_PREP.md
+├── requirements.txt
+├── .gitignore
+│
+├── original_materials/
+│   ├── REPORT_v0.md
+│   ├── fertility.py
+│   ├── bench/
+│   │   ├── bench_log.csv
+│   │   └── model_spec.md
+│   └── corpus_sample/
+│       ├── eng_sample.txt
+│       └── hin_sample.txt
+│
+├── partA/
+│   ├── memo.md
+│   ├── code/
+│   │   ├── audit_fertility.py
+│   │   ├── prepare_corpus.py
+│   │   └── run_tokenizer_analysis.py
+│   ├── corpus/
+│   │   ├── README.md
+│   │   ├── corpus_stats.json
+│   │   ├── processed/
+│   │   ├── raw/
+│   │   └── flores200_dataset.tar.gz
+│   ├── experiments/
+│   │   ├── baseline/
+│   │   ├── bug_audit/
+│   │   ├── corrected_analysis/
+│   │   └── metric_audit/
+│   └── results/
+│       ├── evidence_summary.md
+│       ├── tokenizer_results.csv
+│       └── tokenizer_results.json
+│
+├── partB/
+│   ├── README.md
+│   ├── answers.md
+│   ├── calculations.md
+│   ├── code/
+│   │   └── analyze_capacity.py
+│   └── results/
+│       └── capacity_summary.json
+│
+├── partC/
+│   └── memo.md
+│
+└── tests/
+    ├── test_capacity.py
+    └── test_metrics.py
+```
+
+---
+
+## Submission Notes
+
+- Original assignment materials are preserved under `original_materials/`.
+- Experimental evidence and generated results are included with the relevant parts.
+- `NOTEBOOK.md` records the investigation process and evidence.
+- `AI_USAGE.md` documents AI-assisted work.
+- `DEFENSE_PREP.md` contains preparation material for the live defense.
+- Tests are included to validate key calculations and metrics.
+- All reproduction commands are relative to the repository root.
